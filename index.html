@@ -4,6 +4,8 @@
 <title>Mini Shop</title>
 
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
@@ -11,37 +13,43 @@
 <body>
 
 <header>
-<h1>🛍 Mini Shop</h1>
-<p>Colorful Ecommerce Demo</p>
+  <h1>🛍 Mini Shop</h1>
+  <p>Your colorful online store</p>
 </header>
 
 <div class="products">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-<h3>Shoes</h3>
-<p>₹999</p>
-<button onclick="add('Shoes')">Add</button>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+    <h3>Shoes</h3>
+    <p>₹999</p>
+    <button onclick="add('Shoes')"><i class="fa fa-cart-plus"></i> Add</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1c1">
+    <h3>Bag</h3>
+    <p>₹799</p>
+    <button onclick="add('Bag')"><i class="fa fa-cart-plus"></i> Add</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+    <h3>Watch</h3>
+    <p>₹1299</p>
+    <button onclick="add('Watch')"><i class="fa fa-cart-plus"></i> Add</button>
+  </div>
+
 </div>
 
-<div class="card">
-<img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/bag-1838704_960_720.jpg">
-<h3>Bag</h3>
-<p>₹799</p>
-<button onclick="add('Bag')">Add</button>
-</div>
+<section class="cart">
+<h2><i class="fa fa-shopping-cart"></i> Cart</h2>
+<ul id="cart"></ul>
+</section>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
-<h3>Watch</h3>
-<p>₹1299</p>
-<button onclick="add('Watch')">Add</button>
-</div>
-
-</div>
-
-<h2 style="text-align:center">Cart</h2>
-<ul id="cart" style="text-align:center"></ul>
+<footer>
+  Made with ❤️ using DevOps CI/CD
+</footer>
 
 <script src="script.js"></script>
 
